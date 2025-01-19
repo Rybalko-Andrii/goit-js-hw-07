@@ -13,6 +13,58 @@ body {
   line-height: 1.5;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task1-list {
+  padding: 24px;
+  max-width: 888px;
+}
+.item {
+  padding: 16px;
+  max-width: 392px;
+  max-height: 264px;
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+.item:last-child {
+  margin-bottom: 0;
+}
+.task1-title {
+  margin-bottom: 16px;
+}
+.task1-sublist {
+}
+.task1-item {
+  max-width: 360px;
+  max-height: 40px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border-radius: 4px;
+  border: 1px solid #2e2f42;
+  margin-bottom: 8px;
+  padding: 8px 16px;
+}
+.task1-item:last-child {
+  margin-bottom: 0;
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -32,4 +84,192 @@ body {
 .gallery-image {
   width: 100%;
   height: auto;
+}
+
+#name-input {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #2e2f42;
+  margin-bottom: 16px;
+  padding: 8px 16px;
+}
+#name-input::placeholder {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+#name-output {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.task3-title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.login-form {
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 408px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.login-form input {
+  max-width: ;
+  width: 360px;
+  padding: 6px 16px;
+  margin-top: 8px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+
+.login-form button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  border: none;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 16px;
+  background-color: #4e75ff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-form button:hover {
+  background-color: #6c8cff;
+}
+
+.widget {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.widget p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
+.change-color {
+  padding: 10px 20px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 148px;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.change-color:hover {
+  background-color: #6c8cff;
+}
+
+#controls {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding: 32px;
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  height: 104px;
+  background-color: #f6f6fe;
+}
+
+#controls input {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 6px 16px;
+  width: 150px;
+  height: 40px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  text-align: center;
+}
+
+#controls button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#controls button {
+  background-color: #4e75ff;
+}
+
+#controls button:hover {
+  background-color: #6c8cff;
+}
+
+#controls button[data-destroy] {
+  background-color: #ff4e4e;
+}
+
+#controls button[data-destroy]:hover {
+  background-color: #ff7070;
+}
+
+#boxes {
+  display: flex;
+  padding: 32px;
+  gap: 10px;
+  flex-wrap: wrap;
+  background-color: #f6f6fe;
+}
+
+#boxes div {
+  width: 30px;
+  height: 30px;
 }
